@@ -118,6 +118,156 @@
     "h1": "杭州招聘职位",
     "title": "杭州教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
     "description": "寻找杭州高校和科研机构的教学科研岗位。"
+  },
+  "jobs-in-anhui": {
+    "h1": "安徽招聘职位",
+    "title": "安徽教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找安徽高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-chongqing": {
+    "h1": "重庆招聘职位",
+    "title": "重庆教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找重庆高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-fujian": {
+    "h1": "福建招聘职位",
+    "title": "福建教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找福建高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-gansu": {
+    "h1": "甘肃招聘职位",
+    "title": "甘肃教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找甘肃高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-guangdong": {
+    "h1": "广东招聘职位",
+    "title": "广东教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找广东高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-guangxi": {
+    "h1": "广西招聘职位",
+    "title": "广西教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找广西高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-guizhou": {
+    "h1": "贵州招聘职位",
+    "title": "贵州教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找贵州高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-hainan": {
+    "h1": "海南招聘职位",
+    "title": "海南教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找海南高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-hebei": {
+    "h1": "河北招聘职位",
+    "title": "河北教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找河北高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-heilongjiang": {
+    "h1": "黑龙江招聘职位",
+    "title": "黑龙江教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找黑龙江高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-henan": {
+    "h1": "河南招聘职位",
+    "title": "河南教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找河南高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-hubei": {
+    "h1": "湖北招聘职位",
+    "title": "湖北教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找湖北高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-hunan": {
+    "h1": "湖南招聘职位",
+    "title": "湖南教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找湖南高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-inner-mongolia": {
+    "h1": "内蒙古招聘职位",
+    "title": "内蒙古教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找内蒙古高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-jiangsu": {
+    "h1": "江苏招聘职位",
+    "title": "江苏教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找江苏高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-jiangxi": {
+    "h1": "江西招聘职位",
+    "title": "江西教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找江西高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-jilin": {
+    "h1": "吉林招聘职位",
+    "title": "吉林教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找吉林高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-liaoning": {
+    "h1": "辽宁招聘职位",
+    "title": "辽宁教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找辽宁高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-ningxia": {
+    "h1": "宁夏招聘职位",
+    "title": "宁夏教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找宁夏高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-qinghai": {
+    "h1": "青海招聘职位",
+    "title": "青海教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找青海高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-shaanxi": {
+    "h1": "陕西招聘职位",
+    "title": "陕西教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找陕西高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-shandong": {
+    "h1": "山东招聘职位",
+    "title": "山东教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找山东高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-shanxi": {
+    "h1": "山西招聘职位",
+    "title": "山西教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找山西高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-sichuan": {
+    "h1": "四川招聘职位",
+    "title": "四川教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找四川高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-taiwan": {
+    "h1": "台湾招聘职位",
+    "title": "台湾教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找台湾高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-tianjin": {
+    "h1": "天津招聘职位",
+    "title": "天津教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找天津高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-tibet": {
+    "h1": "西藏招聘职位",
+    "title": "西藏教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找西藏高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-xinjiang": {
+    "h1": "新疆招聘职位",
+    "title": "新疆教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找新疆高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-yunnan": {
+    "h1": "云南招聘职位",
+    "title": "云南教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找云南高校和科研机构的教学、科研、行政及教辅岗位。"
+  },
+  "jobs-in-zhejiang": {
+    "h1": "浙江招聘职位",
+    "title": "浙江教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找浙江高校和科研机构的教学、科研、行政及教辅岗位。"
   }
 
 
