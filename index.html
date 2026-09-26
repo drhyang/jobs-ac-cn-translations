@@ -2,23 +2,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>JSON Test</title>
+<title>Loader Test</title>
 </head>
 <body>
-<h1>JSON Test</h1>
+<h1>Loader Test</h1>
 <pre id="output">Loading...</pre>
+
+<script src="/js/translation-loader.js"></script>
 <script>
-fetch('/zh-cn/navigation.json?t='+Date.now())
-.then(function(response){
-if(!response.ok)throw new Error('HTTP '+response.status);
-return response.json();
-})
-.then(function(data){
+console.log('Loader:',window.JobsAcTranslation);
+JobsAcTranslation.load('navigation.json',function(data){
+console.log('Loaded:',data);
 document.getElementById('output').textContent=JSON.stringify(data,null,2);
-})
-.catch(function(error){
-document.getElementById('output').textContent='ERROR: '+error.message;
-console.error(error);
 });
 </script>
 </body>
