@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Translation Loader Test</title>
+</head>
+<body>
+<h1>Translation Loader Test</h1>
+<pre id="output">Loading...</pre>
+
+<script src="/js/translation-loader.js"></script>
+<script>
+JobsAcTranslation.load('navigation.json',function(data){
+document.getElementById('output').textContent=JSON.stringify(data,null,2);
+console.log('Loaded:',data);
+});
+</script>
+</body>
+</html>
