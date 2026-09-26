@@ -57,15 +57,19 @@ function updateMeta(){
   var slug = getSlug();
   if (!slug) return;
 
-  // Reuse the promise <head> already started — no duplicate request
-  var p = window.__jacSearchPromise;
+  var p;
 
-  if (!p) {
-    // Fallback: head didn't run (rare) — fetch ourselves (~212B)
-    p = fetch(
+  // Reuse <head>'s promise ONLY if slug matches (same page)
+  if (window.__jacSearchPromise && window.__jacSearchSlug === slug) {
+    p = window.__jacSearchPromise;
+  } else {
+    // Head didn't run, or Turbo navigated to a different slug
+    window.__jacSearchSlug = slug;
+    window.__jacSearchPromise = fetch(
       'https://jobs-ac-cn-translations.pages.dev/zh-cn/search/' + slug + '.json',
       { credentials: 'omit' }
     ).then(function(r){ return r.ok ? r.json() : null; });
+    p = window.__jacSearchPromise;
   }
 
   p.then(function(cat){
@@ -84,8 +88,7 @@ if (document.readyState === 'loading') {
 }
 
 document.addEventListener('turbo:load', function(){
-  window.__jacSearchCategory = null;
-  window.__jacSearchPromise = null;
+  // No reset — updateMeta() compares slug and refetches only if needed
   updateMeta();
 });
 
