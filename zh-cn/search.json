@@ -74,6 +74,971 @@
     "title": "管理、行政与教辅类职位 | Jobs.ac.cn",
     "description": "寻找高校管理、行政、学生事务、运营、财务、人力资源、传播及其他教辅与专业支持岗位。"
   },
+    "architecture": {
+    "h1": "建筑学类职位",
+    "title": "建筑学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找建筑设计、建筑理论及相关建筑学领域的教学与科研职位。"
+  },
+  "construction-management": {
+    "h1": "建筑工程管理类职位",
+    "title": "建筑工程管理类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找建筑项目管理、工程管理、施工管理及相关领域的教学与科研职位。"
+  },
+  "environmental-design": {
+    "h1": "环境设计类职位",
+    "title": "环境设计类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找环境设计、空间设计及相关设计领域的教学与科研职位。"
+  },
+  "fashion-design": {
+    "h1": "服装设计类职位",
+    "title": "服装设计类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找服装设计、时尚设计、服饰及相关创意领域的教学与科研职位。"
+  },
+  "general-design": {
+    "h1": "综合设计类职位",
+    "title": "综合设计类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找综合设计、设计理论及跨领域设计相关的教学与科研职位。"
+  },
+  "graphic-design": {
+    "h1": "平面设计类职位",
+    "title": "平面设计类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找平面设计、视觉传达、品牌设计及相关领域的教学与科研职位。"
+  },
+  "interior-design": {
+    "h1": "室内设计类职位",
+    "title": "室内设计类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找室内设计、空间设计及相关领域的教学与科研职位。"
+  },
+  "landscape-architecture": {
+    "h1": "景观建筑类职位",
+    "title": "景观建筑类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找景观建筑、景观设计及相关环境设计领域的教学与科研职位。"
+  },
+  "product-design": {
+    "h1": "产品设计类职位",
+    "title": "产品设计类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找产品设计、工业设计及相关设计领域的教学与科研职位。"
+  },
+  "urban-design-and-planning": {
+    "h1": "城市设计与规划类职位",
+    "title": "城市设计与规划类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找城市设计、城市规划、区域规划及相关领域的教学与科研职位。"
+  },
+  "art-history": {
+    "h1": "艺术史类职位",
+    "title": "艺术史类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找艺术史、艺术理论及相关人文与艺术领域的教学与科研职位。"
+  },
+  "culinary-arts": {
+    "h1": "烹饪艺术类职位",
+    "title": "烹饪艺术类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找烹饪艺术、餐饮及相关创意与职业教育领域的教学与科研职位。"
+  },
+  "dance": {
+    "h1": "舞蹈类职位",
+    "title": "舞蹈类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找舞蹈、舞蹈教育、编舞及相关表演艺术领域的教学与科研职位。"
+  },
+  "digital-arts": {
+    "h1": "数字艺术类职位",
+    "title": "数字艺术类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找数字艺术、数字创意、互动艺术及相关领域的教学与科研职位。"
+  },
+  "film-and-television": {
+    "h1": "影视类职位",
+    "title": "影视类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找电影、电视、影视制作及相关媒体与表演艺术领域的教学与科研职位。"
+  },
+  "fine-arts": {
+    "h1": "美术类职位",
+    "title": "美术类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找绘画、雕塑、版画及其他美术领域的教学与科研职位。"
+  },
+  "general-arts": {
+    "h1": "综合艺术类职位",
+    "title": "综合艺术类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找综合艺术、艺术实践及跨领域艺术相关的教学与科研职位。"
+  },
+  "musicology": {
+    "h1": "音乐学类职位",
+    "title": "音乐学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找音乐学、音乐理论、音乐史及相关领域的教学与科研职位。"
+  },
+  "music-composition": {
+    "h1": "音乐作曲类职位",
+    "title": "音乐作曲类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找作曲、音乐创作及相关音乐领域的教学与科研职位。"
+  },
+  "music-performance": {
+    "h1": "音乐表演类职位",
+    "title": "音乐表演类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找音乐表演、器乐、声乐及相关领域的教学与科研职位。"
+  },
+  "music-technology": {
+    "h1": "音乐科技类职位",
+    "title": "音乐科技类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找音乐科技、数字音乐、音乐制作及相关技术领域的教学与科研职位。"
+  },
+  "photography": {
+    "h1": "摄影类职位",
+    "title": "摄影类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找摄影、影像创作及相关视觉艺术领域的教学与科研职位。"
+  },
+  "theatre": {
+    "h1": "戏剧类职位",
+    "title": "戏剧类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找戏剧、戏剧表演、导演及相关表演艺术领域的教学与科研职位。"
+  },
+  "visual-arts": {
+    "h1": "视觉艺术类职位",
+    "title": "视觉艺术类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找视觉艺术、视觉创意及相关艺术领域的教学与科研职位。"
+  },
+  "accounting": {
+    "h1": "会计类职位",
+    "title": "会计类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找会计、财务报告、审计及相关领域的教学与科研职位。"
+  },
+  "actuarial-science": {
+    "h1": "精算科学类职位",
+    "title": "精算科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找精算科学、风险分析、保险精算及相关领域的教学与科研职位。"
+  },
+  "business-analytics": {
+    "h1": "商业分析类职位",
+    "title": "商业分析类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找商业分析、数据分析、决策分析及相关商科领域的教学与科研职位。"
+  },
+  "business-law-and-ethics": {
+    "h1": "商法与商业伦理类职位",
+    "title": "商法与商业伦理类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找商法、商业伦理、公司治理及相关领域的教学与科研职位。"
+  },
+  "entrepreneurship-and-innovation": {
+    "h1": "创业与创新类职位",
+    "title": "创业与创新类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找创业、创新、企业家精神及相关商科领域的教学与科研职位。"
+  },
+  "finance": {
+    "h1": "金融类职位",
+    "title": "金融类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找金融、投资、银行及相关领域的教学与科研职位。"
+  },
+  "financial-engineering": {
+    "h1": "金融工程类职位",
+    "title": "金融工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找金融工程、量化金融、金融数学及相关领域的教学与科研职位。"
+  },
+  "human-resource-management": {
+    "h1": "人力资源管理类职位",
+    "title": "人力资源管理类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找人力资源管理、人才管理、组织发展及相关领域的教学与科研职位。"
+  },
+  "hospitality-and-tourism": {
+    "h1": "酒店与旅游类职位",
+    "title": "酒店与旅游类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找酒店管理、旅游管理、会展及相关领域的教学与科研职位。"
+  },
+  "information-systems": {
+    "h1": "信息系统类职位",
+    "title": "信息系统类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找信息系统、信息管理、企业系统及相关领域的教学与科研职位。"
+  },
+  "international-business": {
+    "h1": "国际商务类职位",
+    "title": "国际商务类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找国际商务、跨国经营、国际贸易及相关领域的教学与科研职位。"
+  },
+  "management": {
+    "h1": "管理类职位",
+    "title": "管理类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找管理、组织管理、战略管理及相关商科领域的教学与科研职位。"
+  },
+  "marketing": {
+    "h1": "市场营销类职位",
+    "title": "市场营销类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找市场营销、消费者行为、品牌管理及相关领域的教学与科研职位。"
+  },
+  "real-estate": {
+    "h1": "房地产类职位",
+    "title": "房地产类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找房地产、房地产开发、房地产金融及相关领域的教学与科研职位。"
+  },
+  "supply-chain-management": {
+    "h1": "供应链管理类职位",
+    "title": "供应链管理类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找供应链管理、物流、采购及相关领域的教学与科研职位。"
+  },
+  "taxation": {
+    "h1": "税务类职位",
+    "title": "税务类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找税务、税收政策、税务管理及相关领域的教学与科研职位。"
+  },
+  "communication-studies": {
+    "h1": "传播学类职位",
+    "title": "传播学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找传播学、传播理论及相关领域的教学与科研职位。"
+  },
+  "digital-media": {
+    "h1": "数字媒体类职位",
+    "title": "数字媒体类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找数字媒体、新媒体、数字内容及相关领域的教学与科研职位。"
+  },
+  "journalism": {
+    "h1": "新闻学类职位",
+    "title": "新闻学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找新闻学、新闻采编、新闻传播及相关领域的教学与科研职位。"
+  },
+  "media-studies": {
+    "h1": "媒体研究类职位",
+    "title": "媒体研究类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找媒体研究、媒介理论、媒体文化及相关领域的教学与科研职位。"
+  },
+  "public-relations": {
+    "h1": "公共关系类职位",
+    "title": "公共关系类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找公共关系、组织传播、企业传播及相关领域的教学与科研职位。"
+  },
+  "publishing": {
+    "h1": "出版类职位",
+    "title": "出版类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找出版、编辑、数字出版及相关领域的教学与科研职位。"
+  },
+  "speech-and-public-speaking": {
+    "h1": "演讲与公共表达类职位",
+    "title": "演讲与公共表达类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找公共演讲、口语表达、修辞及相关传播领域的教学与科研职位。"
+  },
+  "technical-communication": {
+    "h1": "技术传播类职位",
+    "title": "技术传播类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找技术传播、技术写作、信息设计及相关领域的教学与科研职位。"
+  },
+  "artificial-intelligence": {
+    "h1": "人工智能类职位",
+    "title": "人工智能类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找人工智能、机器学习、智能系统及相关领域的教学与科研职位。"
+  },
+  "computational-science": {
+    "h1": "计算科学类职位",
+    "title": "计算科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找计算科学、科学计算、数值模拟及相关领域的教学与科研职位。"
+  },
+  "computer-science": {
+    "h1": "计算机科学类职位",
+    "title": "计算机科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找计算机科学、计算理论、计算机系统及相关领域的教学与科研职位。"
+  },
+  "data-science": {
+    "h1": "数据科学类职位",
+    "title": "数据科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找数据科学、数据分析、机器学习及相关领域的教学与科研职位。"
+  },
+  "game-design": {
+    "h1": "游戏设计类职位",
+    "title": "游戏设计类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找游戏设计、游戏开发、交互设计及相关领域的教学与科研职位。"
+  },
+  "human-computer-interaction": {
+    "h1": "人机交互类职位",
+    "title": "人机交互类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找人机交互、用户体验、交互设计及相关领域的教学与科研职位。"
+  },
+  "networking-and-cybersecurity": {
+    "h1": "网络与网络安全类职位",
+    "title": "网络与网络安全类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找计算机网络、网络安全、信息安全及相关领域的教学与科研职位。"
+  },
+  "software-engineering": {
+    "h1": "软件工程类职位",
+    "title": "软件工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找软件工程、软件开发、软件系统及相关领域的教学与科研职位。"
+  },
+  "art-education": {
+    "h1": "艺术教育类职位",
+    "title": "艺术教育类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找艺术教育、美术教育及相关教育领域的教学与科研职位。"
+  },
+  "comparative-education": {
+    "h1": "比较教育类职位",
+    "title": "比较教育类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找比较教育、国际教育及相关领域的教学与科研职位。"
+  },
+  "curriculum-and-instruction": {
+    "h1": "课程与教学类职位",
+    "title": "课程与教学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找课程设计、教学方法、课程开发及相关领域的教学与科研职位。"
+  },
+  "counsellor-education": {
+    "h1": "辅导教育类职位",
+    "title": "辅导教育类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找学生辅导、心理辅导教育及相关教育领域的教学与科研职位。"
+  },
+  "early-childhood-education": {
+    "h1": "学前教育类职位",
+    "title": "学前教育类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找幼儿教育、学前教育及儿童发展相关领域的教学与科研职位。"
+  },
+  "assessment-and-evaluation": {
+    "h1": "教育评估与评价类职位",
+    "title": "教育评估与评价类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找教育评估、学习评价、测量及相关领域的教学与科研职位。"
+  },
+  "educational-leadership": {
+    "h1": "教育领导类职位",
+    "title": "教育领导类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找教育领导、教育管理、学校管理及相关领域的教学与科研职位。"
+  },
+  "educational-technology": {
+    "h1": "教育技术类职位",
+    "title": "教育技术类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找教育技术、数字学习、学习技术及相关领域的教学与科研职位。"
+  },
+  "educational-psychology": {
+    "h1": "教育心理学类职位",
+    "title": "教育心理学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找教育心理学、学习心理、发展与教育及相关领域的教学与科研职位。"
+  },
+  "higher-education": {
+    "h1": "高等教育类职位",
+    "title": "高等教育类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找高等教育、大学管理、大学教学及相关领域的教学与科研职位。"
+  },
+  "language-and-literacy-education": {
+    "h1": "语言与读写教育类职位",
+    "title": "语言与读写教育类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找语言教育、读写教育、语言教学及相关领域的教学与科研职位。"
+  },
+  "lifelong-learning": {
+    "h1": "终身学习类职位",
+    "title": "终身学习类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找终身学习、成人教育、继续教育及相关领域的教学与科研职位。"
+  },
+  "physical-education": {
+    "h1": "体育教育类职位",
+    "title": "体育教育类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找体育教育、运动教学及相关领域的教学与科研职位。"
+  },
+  "primary-education": {
+    "h1": "小学教育类职位",
+    "title": "小学教育类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找小学教育、基础教育及相关领域的教学与科研职位。"
+  },
+  "secondary-education": {
+    "h1": "中学教育类职位",
+    "title": "中学教育类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找中学教育、中等教育及相关领域的教学与科研职位。"
+  },
+  "special-education": {
+    "h1": "特殊教育类职位",
+    "title": "特殊教育类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找特殊教育、融合教育及相关领域的教学与科研职位。"
+  },
+  "stem-education": {
+    "h1": "STEM教育类职位",
+    "title": "STEM教育类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找STEM教育、科学教育、技术教育及相关领域的教学与科研职位。"
+  },
+  "general-education": {
+    "h1": "综合教育类职位",
+    "title": "综合教育类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找综合教育、教育理论及跨领域教育相关的教学与科研职位。"
+  },
+  "aerospace-engineering": {
+    "h1": "航空航天工程类职位",
+    "title": "航空航天工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找航空工程、航天工程、飞行器设计及相关领域的教学与科研职位。"
+  },
+  "biological-and-biomedical-engineering": {
+    "h1": "生物与生物医学工程类职位",
+    "title": "生物与生物医学工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找生物工程、生物医学工程及相关领域的教学与科研职位。"
+  },
+  "chemical-engineering": {
+    "h1": "化学工程类职位",
+    "title": "化学工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找化学工程、过程工程及相关领域的教学与科研职位。"
+  },
+  "civil-engineering": {
+    "h1": "土木工程类职位",
+    "title": "土木工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找土木工程、结构工程、建筑工程及相关领域的教学与科研职位。"
+  },
+  "electrical-and-electronics-engineering": {
+    "h1": "电气与电子工程类职位",
+    "title": "电气与电子工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找电气工程、电子工程、控制及相关领域的教学与科研职位。"
+  },
+  "energy-engineering": {
+    "h1": "能源工程类职位",
+    "title": "能源工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找能源工程、能源技术、可再生能源及相关领域的教学与科研职位。"
+  },
+  "environmental-engineering": {
+    "h1": "环境工程类职位",
+    "title": "环境工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找环境工程、污染控制、环境技术及相关领域的教学与科研职位。"
+  },
+  "industrial-engineering": {
+    "h1": "工业工程类职位",
+    "title": "工业工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找工业工程、生产系统、运营管理及相关领域的教学与科研职位。"
+  },
+  "materials-science-and-engineering": {
+    "h1": "材料科学与工程类职位",
+    "title": "材料科学与工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找材料科学、材料工程、新材料及相关领域的教学与科研职位。"
+  },
+  "mechanical-engineering": {
+    "h1": "机械工程类职位",
+    "title": "机械工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找机械工程、机械设计、制造及相关领域的教学与科研职位。"
+  },
+  "mining-engineering": {
+    "h1": "采矿工程类职位",
+    "title": "采矿工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找采矿工程、矿业工程、矿山技术及相关领域的教学与科研职位。"
+  },
+  "ocean-engineering": {
+    "h1": "海洋工程类职位",
+    "title": "海洋工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找海洋工程、海洋技术、海洋结构及相关领域的教学与科研职位。"
+  },
+  "textile-engineering": {
+    "h1": "纺织工程类职位",
+    "title": "纺织工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找纺织工程、纺织材料、纺织技术及相关领域的教学与科研职位。"
+  },
+  "transportation-engineering": {
+    "h1": "交通工程类职位",
+    "title": "交通工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找交通工程、交通规划、交通运输系统及相关领域的教学与科研职位。"
+  },
+  "nuclear-engineering": {
+    "h1": "核工程类职位",
+    "title": "核工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找核工程、核技术、核能及相关领域的教学与科研职位。"
+  },
+  "general-engineering": {
+    "h1": "综合工程类职位",
+    "title": "综合工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找综合工程、工程科学及跨领域工程相关的教学与科研职位。"
+  },
+  "classics": {
+    "h1": "古典学类职位",
+    "title": "古典学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找古典学、古代文明、古典语言及相关人文学科领域的教学与科研职位。"
+  },
+  "creative-writing": {
+    "h1": "创意写作类职位",
+    "title": "创意写作类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找创意写作、文学创作及相关领域的教学与科研职位。"
+  },
+  "cultural-heritage": {
+    "h1": "文化遗产类职位",
+    "title": "文化遗产类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找文化遗产、遗产保护、文物及相关领域的教学与科研职位。"
+  },
+  "cultural-studies": {
+    "h1": "文化研究类职位",
+    "title": "文化研究类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找文化研究、文化理论、社会文化及相关领域的教学与科研职位。"
+  },
+  "history": {
+    "h1": "历史学类职位",
+    "title": "历史学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找历史学、历史研究及相关领域的教学与科研职位。"
+  },
+  "languages": {
+    "h1": "语言类职位",
+    "title": "语言类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找语言学、语言研究及不同语言领域的教学与科研职位。"
+  },
+  "literature": {
+    "h1": "文学类职位",
+    "title": "文学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找文学、文学研究及相关领域的教学与科研职位。"
+  },
+  "linguistics": {
+    "h1": "语言学类职位",
+    "title": "语言学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找语言学、语音学、句法学及相关领域的教学与科研职位。"
+  },
+  "museum-studies": {
+    "h1": "博物馆学类职位",
+    "title": "博物馆学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找博物馆学、博物馆管理、策展及相关领域的教学与科研职位。"
+  },
+  "philosophy": {
+    "h1": "哲学类职位",
+    "title": "哲学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找哲学、伦理学、逻辑学及相关领域的教学与科研职位。"
+  },
+  "religious-studies": {
+    "h1": "宗教研究类职位",
+    "title": "宗教研究类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找宗教研究、宗教史、宗教思想及相关领域的教学与科研职位。"
+  },
+  "translation-and-interpreting": {
+    "h1": "翻译与口译类职位",
+    "title": "翻译与口译类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找翻译、口译、语言服务及相关领域的教学与科研职位。"
+  },
+  "general-humanities": {
+    "h1": "综合人文学科类职位",
+    "title": "综合人文学科类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找综合人文学科及跨领域人文研究相关的教学与科研职位。"
+  },
+  "law": {
+    "h1": "法律类职位",
+    "title": "法律类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找法律、法学理论、法律制度及相关领域的教学与科研职位。"
+  },
+  "legal-studies": {
+    "h1": "法学研究类职位",
+    "title": "法学研究类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找法学研究、法律制度、法律理论及相关领域的教学与科研职位。"
+  },
+  "agriculture": {
+    "h1": "农业科学类职位",
+    "title": "农业科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找农业科学、农学、作物生产及相关领域的教学与科研职位。"
+  },
+  "anatomy": {
+    "h1": "解剖学类职位",
+    "title": "解剖学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找解剖学、人体解剖及相关生命科学与医学领域的教学与科研职位。"
+  },
+  "biochemistry": {
+    "h1": "生物化学类职位",
+    "title": "生物化学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找生物化学、分子生物化学及相关生命科学领域的教学与科研职位。"
+  },
+  "biodiversity-and-conservation": {
+    "h1": "生物多样性与保护类职位",
+    "title": "生物多样性与保护类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找生物多样性、自然保护、保护生物学及相关领域的教学与科研职位。"
+  },
+  "bioinformatics": {
+    "h1": "生物信息学类职位",
+    "title": "生物信息学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找生物信息学、计算生物学及相关领域的教学与科研职位。"
+  },
+  "biological-sciences": {
+    "h1": "生物科学类职位",
+    "title": "生物科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找生物科学、生物学及相关生命科学领域的教学与科研职位。"
+  },
+  "biomedical-science": {
+    "h1": "生物医学科学类职位",
+    "title": "生物医学科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找生物医学科学、疾病研究及相关生命科学领域的教学与科研职位。"
+  },
+  "biophysics": {
+    "h1": "生物物理学类职位",
+    "title": "生物物理学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找生物物理学、分子生物物理及相关领域的教学与科研职位。"
+  },
+  "biostatistics": {
+    "h1": "生物统计学类职位",
+    "title": "生物统计学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找生物统计学、医学统计及相关领域的教学与科研职位。"
+  },
+  "biotechnology": {
+    "h1": "生物技术类职位",
+    "title": "生物技术类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找生物技术、生物工程及相关领域的教学与科研职位。"
+  },
+  "botany": {
+    "h1": "植物学类职位",
+    "title": "植物学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找植物学、植物科学及相关生命科学领域的教学与科研职位。"
+  },
+  "cell-biology": {
+    "h1": "细胞生物学类职位",
+    "title": "细胞生物学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找细胞生物学、细胞研究及相关生命科学领域的教学与科研职位。"
+  },
+  "ecology": {
+    "h1": "生态学类职位",
+    "title": "生态学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找生态学、生态系统、环境生态及相关领域的教学与科研职位。"
+  },
+  "fisheries": {
+    "h1": "渔业科学类职位",
+    "title": "渔业科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找渔业科学、水产养殖、水生生物及相关领域的教学与科研职位。"
+  },
+  "food-science": {
+    "h1": "食品科学类职位",
+    "title": "食品科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找食品科学、食品技术、食品安全及相关领域的教学与科研职位。"
+  },
+  "forestry": {
+    "h1": "林业科学类职位",
+    "title": "林业科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找林业、森林科学、森林资源及相关领域的教学与科研职位。"
+  },
+  "horticulture": {
+    "h1": "园艺学类职位",
+    "title": "园艺学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找园艺、园艺科学、植物栽培及相关领域的教学与科研职位。"
+  },
+  "genetics": {
+    "h1": "遗传学类职位",
+    "title": "遗传学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找遗传学、基因组学及相关生命科学领域的教学与科研职位。"
+  },
+  "microbiology": {
+    "h1": "微生物学类职位",
+    "title": "微生物学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找微生物学、微生物技术及相关生命科学领域的教学与科研职位。"
+  },
+  "molecular-biology": {
+    "h1": "分子生物学类职位",
+    "title": "分子生物学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找分子生物学、分子遗传学及相关生命科学领域的教学与科研职位。"
+  },
+  "neuroscience": {
+    "h1": "神经科学类职位",
+    "title": "神经科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找神经科学、脑科学及相关生命科学与医学领域的教学与科研职位。"
+  },
+  "physiology": {
+    "h1": "生理学类职位",
+    "title": "生理学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找生理学、人体生理及相关生命科学与医学领域的教学与科研职位。"
+  },
+  "systems-biology": {
+    "h1": "系统生物学类职位",
+    "title": "系统生物学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找系统生物学、计算生物学及相关生命科学领域的教学与科研职位。"
+  },
+  "veterinary-sciences": {
+    "h1": "兽医学类职位",
+    "title": "兽医学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找兽医学、动物医学及相关领域的教学与科研职位。"
+  },
+  "zoology": {
+    "h1": "动物学类职位",
+    "title": "动物学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找动物学、动物科学及相关生命科学领域的教学与科研职位。"
+  },
+  "clinical-medicine": {
+    "h1": "临床医学类职位",
+    "title": "临床医学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找临床医学、临床研究及相关医学领域的教学与科研职位。"
+  },
+  "communication-sciences-and-disorders": {
+    "h1": "言语与沟通障碍类职位",
+    "title": "言语与沟通障碍类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找言语、语言、听觉及沟通障碍相关领域的教学与科研职位。"
+  },
+  "dental-studies": {
+    "h1": "牙科与口腔医学类职位",
+    "title": "牙科与口腔医学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找牙科、口腔医学及相关领域的教学与科研职位。"
+  },
+  "exercise-and-sport-sciences": {
+    "h1": "运动与体育科学类职位",
+    "title": "运动与体育科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找运动科学、体育科学、人体运动及相关领域的教学与科研职位。"
+  },
+  "gerontology": {
+    "h1": "老年学类职位",
+    "title": "老年学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找老年学、老龄化研究及相关健康与社会科学领域的教学与科研职位。"
+  },
+  "health-administration": {
+    "h1": "卫生管理类职位",
+    "title": "卫生管理类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找卫生管理、医疗管理、卫生政策及相关领域的教学与科研职位。"
+  },
+  "health-informatics": {
+    "h1": "健康信息学类职位",
+    "title": "健康信息学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找健康信息学、医疗信息技术、健康数据及相关领域的教学与科研职位。"
+  },
+  "health-sciences": {
+    "h1": "健康科学类职位",
+    "title": "健康科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找健康科学、公共健康、健康研究及相关领域的教学与科研职位。"
+  },
+  "medical-technology": {
+    "h1": "医学技术类职位",
+    "title": "医学技术类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找医学技术、临床技术、医疗检测及相关领域的教学与科研职位。"
+  },
+  "midwifery": {
+    "h1": "助产学类职位",
+    "title": "助产学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找助产学、孕产妇护理及相关领域的教学与科研职位。"
+  },
+  "nursing": {
+    "h1": "护理学类职位",
+    "title": "护理学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找护理学、护理教育、临床护理及相关领域的教学与科研职位。"
+  },
+  "nutrition-and-dietetics": {
+    "h1": "营养与营养学类职位",
+    "title": "营养与营养学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找营养学、膳食、营养健康及相关领域的教学与科研职位。"
+  },
+  "occupational-health-and-safety": {
+    "h1": "职业健康与安全类职位",
+    "title": "职业健康与安全类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找职业健康、职业安全、工作场所健康及相关领域的教学与科研职位。"
+  },
+  "occupational-therapy": {
+    "h1": "职业治疗类职位",
+    "title": "职业治疗类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找职业治疗、康复治疗及相关领域的教学与科研职位。"
+  },
+  "optometry": {
+    "h1": "视光学类职位",
+    "title": "视光学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找视光学、眼视光及相关领域的教学与科研职位。"
+  },
+  "pathology": {
+    "h1": "病理学类职位",
+    "title": "病理学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找病理学、病理研究及相关医学领域的教学与科研职位。"
+  },
+  "paramedicine": {
+    "h1": "急救医学类职位",
+    "title": "急救医学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找急救医学、院前急救、急救护理及相关领域的教学与科研职位。"
+  },
+  "pharmacy": {
+    "h1": "药学类职位",
+    "title": "药学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找药学、药物研究、药剂学及相关领域的教学与科研职位。"
+  },
+  "preclinical-medicine": {
+    "h1": "基础医学类职位",
+    "title": "基础医学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找基础医学、生理、病理及相关医学基础研究领域的教学与科研职位。"
+  },
+  "public-health": {
+    "h1": "公共卫生类职位",
+    "title": "公共卫生类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找公共卫生、流行病学、卫生政策及相关领域的教学与科研职位。"
+  },
+  "therapy-and-rehabilitation": {
+    "h1": "治疗与康复类职位",
+    "title": "治疗与康复类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找康复治疗、物理治疗及相关领域的教学与科研职位。"
+  },
+  "traditional-medicine": {
+    "h1": "传统医学类职位",
+    "title": "传统医学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找传统医学、中医及相关领域的教学与科研职位。"
+  },
+  "atmospheric-sciences": {
+    "h1": "大气科学类职位",
+    "title": "大气科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找大气科学、气象学、气候研究及相关领域的教学与科研职位。"
+  },
+  "astronomy": {
+    "h1": "天文学类职位",
+    "title": "天文学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找天文学、天体物理及相关领域的教学与科研职位。"
+  },
+  "chemistry": {
+    "h1": "化学类职位",
+    "title": "化学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找化学、分析化学、有机化学及相关领域的教学与科研职位。"
+  },
+  "earth-sciences": {
+    "h1": "地球科学类职位",
+    "title": "地球科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找地球科学、地球系统、地球物理及相关领域的教学与科研职位。"
+  },
+  "environment": {
+    "h1": "环境科学类职位",
+    "title": "环境科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找环境科学、环境研究、生态环境及相关领域的教学与科研职位。"
+  },
+  "general-science": {
+    "h1": "综合科学类职位",
+    "title": "综合科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找综合科学、跨学科科学及相关领域的教学与科研职位。"
+  },
+  "geology": {
+    "h1": "地质学类职位",
+    "title": "地质学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找地质学、地球材料、地质资源及相关领域的教学与科研职位。"
+  },
+  "geospatial-science": {
+    "h1": "地理空间科学类职位",
+    "title": "地理空间科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找地理空间科学、地理信息、空间数据及相关领域的教学与科研职位。"
+  },
+  "hydrology": {
+    "h1": "水文学类职位",
+    "title": "水文学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找水文学、水资源、水文地质及相关领域的教学与科研职位。"
+  },
+  "mathematics": {
+    "h1": "数学类职位",
+    "title": "数学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找数学、应用数学、纯数学及相关领域的教学与科研职位。"
+  },
+  "ocean": {
+    "h1": "海洋科学类职位",
+    "title": "海洋科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找海洋科学、海洋研究、海洋生态及相关领域的教学与科研职位。"
+  },
+  "physics": {
+    "h1": "物理学类职位",
+    "title": "物理学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找物理学、应用物理、理论物理及相关领域的教学与科研职位。"
+  },
+  "statistics": {
+    "h1": "统计学类职位",
+    "title": "统计学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找统计学、应用统计、数据分析及相关领域的教学与科研职位。"
+  },
+  "anthropology": {
+    "h1": "人类学类职位",
+    "title": "人类学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找人类学、社会文化人类学及相关领域的教学与科研职位。"
+  },
+  "archaeology": {
+    "h1": "考古学类职位",
+    "title": "考古学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找考古学、考古研究、文化遗产及相关领域的教学与科研职位。"
+  },
+  "area-studies": {
+    "h1": "区域研究类职位",
+    "title": "区域研究类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找区域研究、跨区域研究及相关领域的教学与科研职位。"
+  },
+  "american-studies": {
+    "h1": "美国研究类职位",
+    "title": "美国研究类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找美国研究、美国历史、社会与文化及相关领域的教学与科研职位。"
+  },
+  "asian-studies": {
+    "h1": "亚洲研究类职位",
+    "title": "亚洲研究类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找亚洲研究、亚洲历史、社会与文化及相关领域的教学与科研职位。"
+  },
+  "criminal-justice": {
+    "h1": "刑事司法类职位",
+    "title": "刑事司法类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找刑事司法、司法制度、执法及相关领域的教学与科研职位。"
+  },
+  "criminology": {
+    "h1": "犯罪学类职位",
+    "title": "犯罪学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找犯罪学、犯罪研究、犯罪行为及相关领域的教学与科研职位。"
+  },
+  "disaster-and-emergency-management": {
+    "h1": "灾害与应急管理类职位",
+    "title": "灾害与应急管理类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找灾害管理、应急管理、风险管理及相关领域的教学与科研职位。"
+  },
+  "economics": {
+    "h1": "经济学类职位",
+    "title": "经济学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找经济学、应用经济学、经济政策及相关领域的教学与科研职位。"
+  },
+  "european-studies": {
+    "h1": "欧洲研究类职位",
+    "title": "欧洲研究类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找欧洲研究、欧洲历史、社会与文化及相关领域的教学与科研职位。"
+  },
+  "gender-studies": {
+    "h1": "性别研究类职位",
+    "title": "性别研究类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找性别研究、性别理论、社会与文化及相关领域的教学与科研职位。"
+  },
+  "general-social-sciences": {
+    "h1": "综合社会科学类职位",
+    "title": "综合社会科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找综合社会科学及跨学科社会研究相关的教学与科研职位。"
+  },
+  "human-geography": {
+    "h1": "人文地理学类职位",
+    "title": "人文地理学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找人文地理、人口地理、城市与区域研究及相关领域的教学与科研职位。"
+  },
+  "human-services": {
+    "h1": "人类服务类职位",
+    "title": "人类服务类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找人类服务、社会服务、社区服务及相关领域的教学与科研职位。"
+  },
+  "international-relations": {
+    "h1": "国际关系类职位",
+    "title": "国际关系类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找国际关系、国际事务、全球治理及相关领域的教学与科研职位。"
+  },
+  "library-and-information-science": {
+    "h1": "图书馆与信息科学类职位",
+    "title": "图书馆与信息科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找图书馆学、信息科学、信息管理及相关领域的教学与科研职位。"
+  },
+  "peace-and-conflict-studies": {
+    "h1": "和平与冲突研究类职位",
+    "title": "和平与冲突研究类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找和平研究、冲突研究、和平建设及相关领域的教学与科研职位。"
+  },
+  "political-science": {
+    "h1": "政治学类职位",
+    "title": "政治学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找政治学、政治理论、比较政治及相关领域的教学与科研职位。"
+  },
+  "psychology": {
+    "h1": "心理学类职位",
+    "title": "心理学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找心理学、心理研究、行为科学及相关领域的教学与科研职位。"
+  },
+  "public-administration": {
+    "h1": "公共管理类职位",
+    "title": "公共管理类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找公共管理、政府管理、公共服务及相关领域的教学与科研职位。"
+  },
+  "public-policy": {
+    "h1": "公共政策类职位",
+    "title": "公共政策类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找公共政策、政策分析、政策研究及相关领域的教学与科研职位。"
+  },
+  "sociology": {
+    "h1": "社会学类职位",
+    "title": "社会学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找社会学、社会研究、社会理论及相关领域的教学与科研职位。"
+  },
+  "development-studies": {
+    "h1": "发展研究类职位",
+    "title": "发展研究类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找发展研究、国际发展、发展政策及相关领域的教学与科研职位。"
+  },
+  "forensic-studies": {
+    "h1": "法证研究类职位",
+    "title": "法证研究类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找法证科学、司法鉴定及相关领域的教学与科研职位。"
+  },
+  "interdisciplinary-studies": {
+    "h1": "跨学科研究类职位",
+    "title": "跨学科研究类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找涵盖多个学科及新兴跨学科领域的教学与科研职位。"
+  },
+  "liberal-arts": {
+    "h1": "文理学科类职位",
+    "title": "文理学科类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找文理学科、通识教育及跨学科领域的教学与科研职位。"
+  },
+  "sustainability": {
+    "h1": "可持续发展类职位",
+    "title": "可持续发展类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找可持续发展、环境可持续性及相关领域的教学与科研职位。"
+  },
+  "systems-science": {
+    "h1": "系统科学类职位",
+    "title": "系统科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找系统科学、复杂系统、系统建模及相关领域的教学与科研职位。"
+  },
   "jobs-in-china": {
     "h1": "中国招聘职位",
     "title": "中国教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
