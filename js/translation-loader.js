@@ -19,10 +19,12 @@ return r.json();
 .then(function(data){
 cache[file]=data;
 callback(data);
-})
-.catch(function(e){
+}).catch(function(e){
 console.error('Translation load failed:',file,e);
+callback(null);   // ← 关键：失败也要通知调用方
 });
+
+    
 
 }
 
