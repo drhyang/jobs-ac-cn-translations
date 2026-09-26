@@ -37,4 +37,8 @@ if(window.JobsAcContext.lang==='zh-cn'){
 loadScript('navigation.js');
 }
 
+if(window.JobsAcContext.path==='/'){
+loadScript('home.js');
+}
+
 })();
