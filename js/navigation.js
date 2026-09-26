@@ -1,19 +1,58 @@
-/* Jobs.ac.cn Navigation Translation Test */
+/* Jobs.ac.cn Navigation Translation */
 (function(){
 'use strict';
 
-window.JobsAcTranslation.load('navigation.json',function(translations){
+var originalText=new WeakMap();
 
-document.querySelectorAll('header a,nav a,footer a').forEach(function(link){
+function replaceTextNodes(container,translations,chinese){
 
-var text=link.textContent.trim();
+var walker=document.createTreeWalker(
+container,
+NodeFilter.SHOW_TEXT,
+null
+);
 
-if(translations[text]){
-link.textContent=translations[text];
+var node;
+
+while(node=walker.nextNode()){
+
+var current=node.textContent.trim();
+
+if(!originalText.has(node)){
+originalText.set(node,node.textContent);
 }
 
-});
+if(!chinese){
+node.textContent=originalText.get(node);
+continue;
+}
+
+if(translations[current]){
+node.textContent=node.textContent.replace(
+current,
+translations[current]
+);
+}
+
+}
+
+}
+
+function updateNavigation(){
+
+window.JobsAcTranslation.load('navigation.json',function(translations){
+
+replaceTextNodes(
+document.querySelector('header'),
+translations,
+document.documentElement.lang.toLowerCase()==='zh-cn'
+);
 
 });
+
+}
+
+document.addEventListener('DOMContentLoaded',updateNavigation);
+document.addEventListener('turbo:load',updateNavigation);
 
 })();
