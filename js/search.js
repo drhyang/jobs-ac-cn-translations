@@ -1,4 +1,4 @@
-/* Jobs.ac.cn Search Category SEO — meta/title only */
+/* Jobs.ac.cn Search Category SEO — meta/title only (h1 handled in <head>) */
 (function(){
 'use strict';
 
@@ -57,25 +57,24 @@ function updateMeta(){
   var slug = getSlug();
   if (!slug) return;
 
-  // Reuse data already fetched by <head>
-  if (window.__jacSearchCategory) {
-    saveOriginalMeta();
-    applyMeta(window.__jacSearchCategory);
-    return;
+  // Reuse the promise <head> already started — no duplicate request
+  var p = window.__jacSearchPromise;
+
+  if (!p) {
+    // Fallback: head didn't run (rare) — fetch ourselves (~212B)
+    p = fetch(
+      'https://jobs-ac-cn-translations.pages.dev/zh-cn/search/' + slug + '.json',
+      { credentials: 'omit' }
+    ).then(function(r){ return r.ok ? r.json() : null; });
   }
 
-  // Fallback: per-slug fetch (~300B, not the whole 58KB)
-  fetch(
-    'https://jobs-ac-cn-translations.pages.dev/zh-cn/search/' + slug + '.json',
-    { credentials: 'omit' }
-  )
-    .then(function(r){ return r.ok ? r.json() : null; })
-    .then(function(cat){
-      if (!cat) return;
-      saveOriginalMeta();
-      applyMeta(cat);
-    })
-    .catch(function(e){ console.error('search meta fetch failed:', e); });
+  p.then(function(cat){
+    if (!cat) return;
+    saveOriginalMeta();
+    applyMeta(cat);
+  }).catch(function(e){
+    console.error('search meta failed:', e);
+  });
 }
 
 if (document.readyState === 'loading') {
@@ -86,6 +85,7 @@ if (document.readyState === 'loading') {
 
 document.addEventListener('turbo:load', function(){
   window.__jacSearchCategory = null;
+  window.__jacSearchPromise = null;
   updateMeta();
 });
 
