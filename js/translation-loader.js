@@ -47,13 +47,25 @@ if(lang==='zh-CN'){
 loadScript('navigation.js');
 
 
-// Chinese homepage
+// Static pages SEO
 if(
-path==='/' ||
-path==='/zh-cn' ||
-path==='/zh-cn/'
+    path==='/' ||
+    path==='/zh-cn' ||
+    path==='/zh-cn/' ||
+    path==='/about' ||
+    path==='/zh-cn/about' ||
+    path==='/for-employers' ||
+    path==='/zh-cn/for-employers' ||
+    path==='/for-job-seekers' ||
+    path==='/zh-cn/for-job-seekers' ||
+    path==='/contact' ||
+    path==='/zh-cn/contact' ||
+    path==='/blog' ||
+    path==='/zh-cn/blog' ||
+    path==='/jobs' ||
+    path==='/zh-cn/jobs'
 ){
-loadScript('home.js');
+    loadScript('pages.js');
 }
 
 
