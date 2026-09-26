@@ -19,7 +19,7 @@
 <script>
 window.JobsAcLanguage={
 isChinese:function(){return true;},
-replaceTextNodes:function(element,translations){
+replaceTextNodes:function(element,translations,originalText,chinese){
 var walker=document.createTreeWalker(element,NodeFilter.SHOW_TEXT,null);
 var node;
 while((node=walker.nextNode())){
