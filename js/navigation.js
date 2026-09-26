@@ -2,33 +2,20 @@
 (function(){
 'use strict';
 
-var originalText=new WeakMap();
+console.log('navigation.js loaded');
+console.log('JobsAcLanguage:',window.JobsAcLanguage);
 
-function updateNavigation(){
-if(!window.JobsAcLanguage||!window.JobsAcLanguage.replaceTextNodes){
-setTimeout(updateNavigation,100);
+function check(){
+console.log('check JobsAcLanguage:',window.JobsAcLanguage);
+
+if(window.JobsAcLanguage){
+console.log('JobsAcLanguage found');
 return;
 }
 
-window.JobsAcTranslation.load('navigation.json',function(translations){
-
-document.querySelectorAll('header,nav,footer').forEach(function(container){
-
-window.JobsAcLanguage.replaceTextNodes(
-container,
-translations,
-originalText,
-window.JobsAcLanguage.isChinese()
-);
-
-});
-
-});
-
+setTimeout(check,500);
 }
 
-document.addEventListener('DOMContentLoaded',updateNavigation,{once:true});
-document.addEventListener('turbo:load',updateNavigation);
-document.addEventListener('jobsac:language-change',updateNavigation);
+check();
 
 })();
