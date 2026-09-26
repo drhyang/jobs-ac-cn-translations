@@ -1,0 +1,5 @@
+/zh-cn/search/*.json
+  Content-Type: application/json; charset=utf-8
+
+/zh-cn/search.json
+  Content-Type: application/json; charset=utf-8
