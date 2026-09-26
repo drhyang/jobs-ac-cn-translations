@@ -1,36 +1,23 @@
-/* Jobs.ac.cn Navigation Translation */
+/* Jobs.ac.cn Navigation Translation Test */
 (function(){
 'use strict';
 
-var originalText=new WeakMap();
+function translateNavigation(){
 
-function updateNavigation(){
-
-if(!window.JobsAcLanguage||!window.JobsAcLanguage.replaceTextNodes){
-setTimeout(updateNavigation,100);
-return;
-}
-
-var containers=document.querySelectorAll('header,nav,footer');
-
-if(!containers.length){
-setTimeout(updateNavigation,100);
+if(!window.JobsAcTranslation){
+setTimeout(translateNavigation,100);
 return;
 }
 
 window.JobsAcTranslation.load('navigation.json',function(translations){
 
-console.log('navigation loaded',translations);
-console.log('containers',containers.length);
+document.querySelectorAll('header a,nav a,footer a').forEach(function(link){
 
-containers.forEach(function(container){
+var text=link.textContent.trim();
 
-window.JobsAcLanguage.replaceTextNodes(
-container,
-translations,
-originalText,
-window.JobsAcLanguage.isChinese()
-);
+if(translations[text]){
+link.textContent=translations[text];
+}
 
 });
 
@@ -38,10 +25,8 @@ window.JobsAcLanguage.isChinese()
 
 }
 
-updateNavigation();
+translateNavigation();
 
-document.addEventListener('DOMContentLoaded',updateNavigation,{once:true});
-document.addEventListener('turbo:load',updateNavigation);
-document.addEventListener('jobsac:language-change',updateNavigation);
+document.addEventListener('turbo:load',translateNavigation);
 
 })();
