@@ -19,6 +19,9 @@ return r.json();
 .then(function(data){
 cache[file]=data;
 callback(data);
+})
+.catch(function(e){
+console.error('Translation load failed:',file,e);
 });
 
 }
@@ -33,18 +36,33 @@ document.head.appendChild(script);
 
 }
 
-// now JobsAcTranslation exists
 
-if(window.JobsAcContext.lang==='zh-CN'){
+var lang=window.JobsAcContext.lang;
+var path=window.JobsAcContext.path;
 
+
+if(lang==='zh-CN'){
+
+// all Chinese pages
 loadScript('navigation.js');
 
+
+// Chinese homepage
 if(
-window.JobsAcContext.path==='/' ||
-window.JobsAcContext.path==='/zh-cn' ||
-window.JobsAcContext.path==='/zh-cn/'
+path==='/' ||
+path==='/zh-cn' ||
+path==='/zh-cn/'
 ){
 loadScript('home.js');
+}
+
+
+// Chinese search pages
+if(
+path.indexOf('/s/')===0 ||
+path.indexOf('/zh-cn/s/')===0
+){
+loadScript('search.js');
 }
 
 }
