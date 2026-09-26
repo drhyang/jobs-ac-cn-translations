@@ -3,26 +3,24 @@
 'use strict';
 
 function isChinese(){
-return window.location.pathname.indexOf('/zh-cn')===0;
+return window.JobsAcContext &&
+window.JobsAcContext.lang==='zh-cn';
 }
 
-function replaceNavigation(){
+function updateNavigation(){
 
 if(!isChinese()){
 return;
 }
 
-window.JobsAcTranslation.load(
-'navigation.json',
-function(translations){
+window.JobsAcTranslation.load('navigation.json',function(translations){
 
-document.querySelectorAll(
-'header,nav,footer'
-).forEach(function(container){
+document.querySelectorAll('header,nav,footer').forEach(function(container){
 
 var walker=document.createTreeWalker(
 container,
-NodeFilter.SHOW_TEXT
+NodeFilter.SHOW_TEXT,
+null
 );
 
 var node;
@@ -32,32 +30,21 @@ while(node=walker.nextNode()){
 var text=node.textContent.trim();
 
 if(translations[text]){
-
 node.textContent=node.textContent.replace(
 text,
 translations[text]
 );
-
 }
 
 }
 
 });
 
-window.JobsAcTranslation.finish();
-
 });
 
 }
 
-document.addEventListener(
-'DOMContentLoaded',
-replaceNavigation
-);
-
-document.addEventListener(
-'turbo:load',
-replaceNavigation
-);
+document.addEventListener('DOMContentLoaded',updateNavigation);
+document.addEventListener('turbo:load',updateNavigation);
 
 })();
