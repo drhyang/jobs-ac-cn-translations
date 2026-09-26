@@ -2,16 +2,7 @@
 (function(){
 'use strict';
 
-function isChinese(){
-return window.JobsAcContext &&
-window.JobsAcContext.lang==='zh-cn';
-}
-
 function updateNavigation(){
-
-if(!isChinese()){
-return;
-}
 
 window.JobsAcTranslation.load('navigation.json',function(translations){
 
