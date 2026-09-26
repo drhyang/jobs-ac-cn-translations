@@ -3,7 +3,7 @@
 'use strict';
 
 var cache={};
-var baseUrl=new URL('../zh-cn/',location.href);
+var baseUrl='https://jobs-ac-cn-translations.pages.dev/zh-cn/';
 
 window.JobsAcTranslation={
 load:function(file,callback){
@@ -12,7 +12,7 @@ callback(cache[file]);
 return;
 }
 
-fetch(new URL(file,baseUrl)+'?t='+Date.now())
+fetch(baseUrl+file+'?t='+Date.now())
 .then(function(r){
 if(!r.ok)throw new Error('HTTP '+r.status);
 return r.json();
