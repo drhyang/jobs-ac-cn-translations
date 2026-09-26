@@ -75,38 +75,48 @@
     "description": "寻找高校管理、行政、学生事务、运营、财务、人力资源、传播及其他教辅与专业支持岗位。"
   },
   "jobs-in-china": {
-    "h1": "中国教学科研岗位招聘",
-    "title": "中国教学科研岗位招聘 | Jobs.ac.cn",
+    "h1": "中国招聘职位",
+    "title": "中国教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
     "description": "寻找中国高校和科研机构的教学科研岗位。"
   },
+    "jobs-in-hong-kong": {
+    "h1": "香港招聘职位",
+    "title": "香港教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找香港高校和科研机构的教学科研岗位。"
+  },
+    "jobs-in-macau": {
+    "h1": "澳门招聘职位",
+    "title": "澳门教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
+    "description": "寻找澳门高校和科研机构的教学科研岗位。"
+  },
   "jobs-in-beijing": {
-    "h1": "北京教学科研岗位招聘",
-    "title": "北京教学科研岗位招聘 | Jobs.ac.cn",
+    "h1": "北京招聘职位",
+    "title": "北京教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
     "description": "寻找北京高校和科研机构的教学科研岗位。"
   },
   "jobs-in-shanghai": {
-    "h1": "上海教学科研岗位招聘",
-    "title": "上海教学科研岗位招聘 | Jobs.ac.cn",
+    "h1": "上海招聘职位",
+    "title": "上海教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
     "description": "寻找上海高校和科研机构的教学科研岗位。"
   },
   "jobs-in-guangzhou": {
-    "h1": "广州教学科研岗位招聘",
-    "title": "广州教学科研岗位招聘 | Jobs.ac.cn",
+    "h1": "广州招聘职位",
+    "title": "广州教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
     "description": "寻找广州高校和科研机构的教学科研岗位。"
   },
   "jobs-in-shenzhen": {
-    "h1": "深圳教学科研岗位招聘",
-    "title": "深圳教学科研岗位招聘 | Jobs.ac.cn",
+    "h1": "深圳招聘职位",
+    "title": "深圳教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
     "description": "寻找深圳高校和科研机构的教学科研岗位。"
   },
   "jobs-in-suzhou": {
-    "h1": "苏州教学科研岗位招聘",
-    "title": "苏州教学科研岗位招聘 | Jobs.ac.cn",
+    "h1": "苏州招聘职位",
+    "title": "苏州教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
     "description": "寻找苏州高校和科研机构的教学科研岗位。"
   },
   "jobs-in-hangzhou": {
-    "h1": "杭州教学科研岗位招聘",
-    "title": "杭州教学科研岗位招聘 | Jobs.ac.cn",
+    "h1": "杭州招聘职位",
+    "title": "杭州教学、科研、行政及教辅岗位招聘 | Jobs.ac.cn",
     "description": "寻找杭州高校和科研机构的教学科研岗位。"
   }
 
