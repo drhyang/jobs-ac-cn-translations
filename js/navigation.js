@@ -2,57 +2,54 @@
 (function(){
 'use strict';
 
-var originalText=new WeakMap();
+function replaceNavigation(){
 
-function replaceTextNodes(container,translations,chinese){
+window.JobsAcTranslation.load(
+'navigation.json',
+function(translations){
+
+document.querySelectorAll(
+'header,nav,footer'
+).forEach(function(container){
 
 var walker=document.createTreeWalker(
 container,
-NodeFilter.SHOW_TEXT,
-null
+NodeFilter.SHOW_TEXT
 );
 
 var node;
 
 while(node=walker.nextNode()){
 
-var current=node.textContent.trim();
+var text=node.textContent.trim();
 
-if(!originalText.has(node)){
-originalText.set(node,node.textContent);
-}
+if(translations[text]){
 
-if(!chinese){
-node.textContent=originalText.get(node);
-continue;
-}
-
-if(translations[current]){
 node.textContent=node.textContent.replace(
-current,
-translations[current]
+text,
+translations[text]
 );
-}
 
 }
 
 }
 
-function updateNavigation(){
+});
 
-window.JobsAcTranslation.load('navigation.json',function(translations){
-
-replaceTextNodes(
-document.querySelector('header'),
-translations,
-document.documentElement.lang.toLowerCase()==='zh-cn'
-);
+window.JobsAcTranslation.finish();
 
 });
 
 }
 
-document.addEventListener('DOMContentLoaded',updateNavigation);
-document.addEventListener('turbo:load',updateNavigation);
+document.addEventListener(
+'DOMContentLoaded',
+replaceNavigation
+);
+
+document.addEventListener(
+'turbo:load',
+replaceNavigation
+);
 
 })();
