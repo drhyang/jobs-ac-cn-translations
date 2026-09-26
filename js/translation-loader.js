@@ -1,8 +1,10 @@
 /* Jobs.ac.cn Translation Loader */
 (function(){
 'use strict';
+
 var cache={};
-var baseUrl=new URL('../zh-cn/',document.currentScript.src);
+var scriptUrl=document.currentScript.src;
+var baseUrl=new URL('../zh-cn/',scriptUrl);
 
 window.JobsAcTranslation={
 load:function(file,callback){
@@ -10,7 +12,7 @@ if(cache[file]){
 callback(cache[file]);
 return;
 }
-fetch(new URL(file,baseUrl).href+'?t='+Date.now())
+fetch(new URL(file,baseUrl)+'?t='+Date.now())
 .then(function(r){
 if(!r.ok)throw new Error('HTTP '+r.status);
 return r.json();
@@ -24,4 +26,5 @@ console.error('Translation load failed:',file,e);
 });
 }
 };
+
 })();
