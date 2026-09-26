@@ -2,10 +2,9 @@
 'use strict';
 
 var cache={};
+var pending=0;
 
 window.JobsAcTranslation={
-
-context:window.JobsAcContext,
 
 load:function(file,callback){
 
@@ -14,9 +13,7 @@ callback(cache[file]);
 return;
 }
 
-fetch(
-'https://jobs-ac-cn-translations.pages.dev/zh-cn/'+file
-)
+fetch('https://jobs-ac-cn-translations.pages.dev/zh-cn/'+file)
 .then(function(r){
 return r.json();
 })
@@ -25,14 +22,31 @@ cache[file]=data;
 callback(data);
 });
 
+},
+
+start:function(){
+pending++;
+},
+
+done:function(){
+pending--;
+
+if(pending<=0){
+document.documentElement.classList.remove('translation-loading');
+}
+
 }
 
 };
 
-function loadScript(src){
+function loadScript(name){
+
+window.JobsAcTranslation.start();
 
 var script=document.createElement('script');
-script.src='https://jobs-ac-cn-translations.pages.dev/js/'+src;
+
+script.src='https://jobs-ac-cn-translations.pages.dev/js/'+name;
+
 document.head.appendChild(script);
 
 }
