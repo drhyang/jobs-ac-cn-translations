@@ -1,4 +1,5 @@
-/* Jobs.ac.cn Translation Loader: load and cache JSON translation files */
+<script>
+/* Jobs.ac.cn Translation Loader */
 (function(){
 'use strict';
 var cache={};
@@ -9,15 +10,14 @@ if(cache[file]){
 callback(cache[file]);
 return;
 }
-fetch('https://jobs-ac-cn-translations.pages.dev/zh-cn/'+file+'?t='+Date.now())
+fetch(new URL('../zh-cn/'+file+'?t='+Date.now(),document.currentScript.src))
 .then(function(r){return r.json();})
 .then(function(data){
 cache[file]=data;
 callback(data);
 })
-.catch(function(e){
-console.error('Translation load failed:',file,e);
-});
+.catch(function(e){console.error('Translation load failed:',file,e);});
 }
 };
 })();
+</script>
