@@ -2,7 +2,6 @@
 'use strict';
 
 var cache={};
-var pending=0;
 
 window.JobsAcTranslation={
 
@@ -22,39 +21,20 @@ cache[file]=data;
 callback(data);
 });
 
-},
-
-start:function(){
-pending++;
-},
-
-done:function(){
-pending--;
-
-if(pending<=0){
-document.documentElement.classList.remove('translation-loading');
-}
-
 }
 
 };
 
 function loadScript(name){
 
-window.JobsAcTranslation.start();
-
 var script=document.createElement('script');
-
 script.src='https://jobs-ac-cn-translations.pages.dev/js/'+name;
-
 document.head.appendChild(script);
 
 }
 
 if(window.JobsAcContext.lang==='zh-cn'){
-
 loadScript('navigation.js');
-
 }
 
 })();
