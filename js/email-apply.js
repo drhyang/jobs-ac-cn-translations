@@ -1,222 +1,244 @@
-/* Jobs.ac.cn Email Application */
-(function(){
-'use strict';
+/* ============================================================
+   Email application method on job detail pages
 
-function isJobDetailPage(){
-var path=window.location.pathname;
-return /^\/(?:zh-cn\/)?jobs\/[^/]+$/.test(path);
-}
+   KEEP THIS AS A SEPARATE SCRIPT.
+   This is the working version that preserves Job Boardly's
+   built-in application-click tracking.
+   ============================================================ */
 
-function isChinesePage(){
-return (
-window.location.pathname.startsWith('/zh-cn/') ||
-document.documentElement.lang==='zh-CN'
-);
-}
+/* Customise email application method on job detail pages */
+(function () {
+  function isJobDetailPage() {
+    var path = window.location.pathname;
 
-function setupEmailApply(){
+    return /^\/(?:zh-cn\/)?jobs\/[^/]+$/.test(path);
+  }
 
-if(!isJobDetailPage()){
-return;
-}
+  function isChinesePage() {
+    return (
+      window.location.pathname.startsWith('/zh-cn/') ||
+      document.documentElement.lang === 'zh-CN'
+    );
+  }
 
-var applyButton=document.getElementById('apply-btn');
+  function setupEmailApply() {
+    if (!isJobDetailPage()) {
+      return;
+    }
 
-if(!applyButton||applyButton.dataset.emailHandled==='true'){
-return;
-}
+    var applyButton = document.getElementById('apply-btn');
 
-var href=applyButton.getAttribute('href');
+    if (!applyButton || applyButton.dataset.emailHandled === 'true') {
+      return;
+    }
 
-if(!href||!/^mailto:/i.test(href)){
-return;
-}
+    var href = applyButton.getAttribute('href');
 
-applyButton.dataset.emailHandled='true';
+    /*
+     * Only customise email-based applications.
+     * External application URLs are left unchanged.
+     */
+    if (!href || !/^mailto:/i.test(href)) {
+      return;
+    }
 
-applyButton.addEventListener('click',function(event){
+    applyButton.dataset.emailHandled = 'true';
 
-var email=href
-.replace(/^mailto:/i,'')
-.split('?')[0];
+    /*
+     * Use capture phase so the handler runs before Job Boardly's
+     * own click handler.
+     *
+     * Do NOT use stopImmediatePropagation(), because Job Boardly
+     * needs to receive the click for its application-click tracking.
+     */
+    applyButton.addEventListener('click', function (event) {
+      var email = href
+        .replace(/^mailto:/i, '')
+        .split('?')[0];
 
-event.preventDefault();
+      /*
+       * Prevent the browser from opening the mail client.
+       * Propagation is NOT stopped, so Job Boardly can still
+       * process the application click.
+       */
+      event.preventDefault();
 
-setTimeout(function(){
-showApplicationModal(email);
-},0);
+      /*
+       * Wait until the current click event has completed before
+       * displaying the modal.
+       */
+      setTimeout(function () {
+        showApplicationModal(email);
+      }, 0);
+    }, true);
+  }
 
-},true);
-}
+  function showApplicationModal(email) {
+    var existingModal = document.getElementById(
+      'jobs-email-apply-modal'
+    );
 
-function showApplicationModal(email){
+    if (existingModal) {
+      existingModal.remove();
+    }
 
-var existingModal=document.getElementById(
-'jobs-email-apply-modal'
-);
+    var chinese = isChinesePage();
 
-if(existingModal){
-existingModal.remove();
-}
+    var modal = document.createElement('div');
+    modal.id = 'jobs-email-apply-modal';
 
-var chinese=isChinesePage();
+    var overlay = document.createElement('div');
+    overlay.className = 'jobs-email-apply-overlay';
 
-var modal=document.createElement('div');
-modal.id='jobs-email-apply-modal';
+    var dialog = document.createElement('div');
+    dialog.className = 'jobs-email-apply-dialog';
+    dialog.setAttribute('role', 'dialog');
+    dialog.setAttribute('aria-modal', 'true');
+    dialog.setAttribute(
+      'aria-labelledby',
+      'jobs-email-apply-title'
+    );
 
-var overlay=document.createElement('div');
-overlay.className='jobs-email-apply-overlay';
+    /* Close button */
+    var closeButton = document.createElement('button');
+    closeButton.type = 'button';
+    closeButton.className = 'jobs-email-apply-close';
+    closeButton.setAttribute(
+      'aria-label',
+      chinese ? '关闭' : 'Close'
+    );
+    closeButton.textContent = '×';
 
-var dialog=document.createElement('div');
-dialog.className='jobs-email-apply-dialog';
-dialog.setAttribute('role','dialog');
-dialog.setAttribute('aria-modal','true');
-dialog.setAttribute(
-'aria-labelledby',
-'jobs-email-apply-title'
-);
+    /* Title */
+    var title = document.createElement('h2');
+    title.id = 'jobs-email-apply-title';
+    title.textContent = chinese
+      ? '如何申请'
+      : 'How to Apply';
 
-var closeButton=document.createElement('button');
-closeButton.type='button';
-closeButton.className='jobs-email-apply-close';
-closeButton.setAttribute(
-'aria-label',
-chinese?'关闭':'Close'
-);
-closeButton.textContent='×';
+    /* Instruction */
+    var message = document.createElement('p');
+    message.textContent = chinese
+      ? '请将您的申请材料发送至：'
+      : 'Please send your application to:';
 
-var title=document.createElement('h2');
-title.id='jobs-email-apply-title';
-title.textContent=chinese
-?'如何申请'
-:'How to Apply';
+    /* Email address - plain text, not a link */
+    var emailAddress = document.createElement('div');
+    emailAddress.className = 'jobs-email-apply-address';
+    emailAddress.textContent = email;
 
-var message=document.createElement('p');
-message.textContent=chinese
-?'请将您的申请材料发送至：'
-:'Please send your application to:';
+    /* Copy button */
+    var copyButton = document.createElement('button');
+    copyButton.type = 'button';
+    copyButton.className = 'jobs-email-apply-copy';
+    copyButton.textContent = chinese
+      ? '复制邮箱地址'
+      : 'Copy Email Address';
 
-var emailAddress=document.createElement('div');
-emailAddress.className='jobs-email-apply-address';
-emailAddress.textContent=email;
+    /* Build modal */
+    dialog.appendChild(closeButton);
+    dialog.appendChild(title);
+    dialog.appendChild(message);
+    dialog.appendChild(emailAddress);
+    dialog.appendChild(copyButton);
 
-var copyButton=document.createElement('button');
-copyButton.type='button';
-copyButton.className='jobs-email-apply-copy';
-copyButton.textContent=chinese
-?'复制邮箱地址'
-:'Copy Email Address';
+    overlay.appendChild(dialog);
+    modal.appendChild(overlay);
+    document.body.appendChild(modal);
 
-dialog.appendChild(closeButton);
-dialog.appendChild(title);
-dialog.appendChild(message);
-dialog.appendChild(emailAddress);
-dialog.appendChild(copyButton);
+    /* Close modal */
+    function closeModal() {
+      modal.remove();
+    }
 
-overlay.appendChild(dialog);
-modal.appendChild(overlay);
-document.body.appendChild(modal);
+    closeButton.addEventListener('click', closeModal);
 
-function closeModal(){
-modal.remove();
-}
+    /* Close when clicking outside */
+    overlay.addEventListener('click', function (event) {
+      if (event.target === overlay) {
+        closeModal();
+      }
+    });
 
-closeButton.addEventListener('click',closeModal);
+    /* Copy email address */
+    copyButton.addEventListener('click', function () {
+      if (
+        navigator.clipboard &&
+        navigator.clipboard.writeText
+      ) {
+        navigator.clipboard.writeText(email).then(function () {
+          copyButton.textContent = chinese
+            ? '邮箱地址已复制'
+            : 'Email Address Copied';
 
-overlay.addEventListener('click',function(event){
-if(event.target===overlay){
-closeModal();
-}
-});
+          setTimeout(function () {
+            if (document.body.contains(copyButton)) {
+              copyButton.textContent = chinese
+                ? '复制邮箱地址'
+                : 'Copy Email Address';
+            }
+          }, 2000);
+        });
+      } else {
+        /* Fallback for older browsers */
+        var textarea = document.createElement('textarea');
 
-copyButton.addEventListener('click',function(){
+        textarea.value = email;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
 
-if(
-navigator.clipboard &&
-navigator.clipboard.writeText
-){
+        document.body.appendChild(textarea);
 
-navigator.clipboard.writeText(email).then(function(){
+        textarea.select();
+        document.execCommand('copy');
 
-copyButton.textContent=chinese
-?'邮箱地址已复制'
-:'Email Address Copied';
+        textarea.remove();
 
-setTimeout(function(){
-if(document.body.contains(copyButton)){
-copyButton.textContent=chinese
-?'复制邮箱地址'
-:'Copy Email Address';
-}
-},2000);
+        copyButton.textContent = chinese
+          ? '邮箱地址已复制'
+          : 'Email Address Copied';
 
-});
+        setTimeout(function () {
+          if (document.body.contains(copyButton)) {
+            copyButton.textContent = chinese
+              ? '邮箱地址已复制'
+              : 'Copy Email Address';
+          }
+        }, 2000);
+      }
+    });
 
-}else{
+    /* Close with ESC */
+    function handleEscape(event) {
+      if (event.key === 'Escape') {
+        closeModal();
 
-var textarea=document.createElement('textarea');
+        document.removeEventListener(
+          'keydown',
+          handleEscape
+        );
+      }
+    }
 
-textarea.value=email;
-textarea.style.position='fixed';
-textarea.style.opacity='0';
+    document.addEventListener(
+      'keydown',
+      handleEscape
+    );
+  }
 
-document.body.appendChild(textarea);
+  /* Initial page load */
+  if (document.readyState === 'loading') {
+    document.addEventListener(
+      'DOMContentLoaded',
+      setupEmailApply
+    );
+  } else {
+    setupEmailApply();
+  }
 
-textarea.select();
-document.execCommand('copy');
-
-textarea.remove();
-
-copyButton.textContent=chinese
-?'邮箱地址已复制'
-:'Email Address Copied';
-
-setTimeout(function(){
-if(document.body.contains(copyButton)){
-copyButton.textContent=chinese
-?'复制邮箱地址'
-:'Copy Email Address';
-}
-},2000);
-
-}
-
-});
-
-function handleEscape(event){
-
-if(event.key==='Escape'){
-
-closeModal();
-
-document.removeEventListener(
-'keydown',
-handleEscape
-);
-
-}
-
-}
-
-document.addEventListener(
-'keydown',
-handleEscape
-);
-
-}
-
-if(document.readyState==='loading'){
-document.addEventListener(
-'DOMContentLoaded',
-setupEmailApply
-);
-}else{
-setupEmailApply();
-}
-
-document.addEventListener(
-'turbo:load',
-setupEmailApply
-);
-
+  /* Job Boardly uses Turbo navigation */
+  document.addEventListener(
+    'turbo:load',
+    setupEmailApply
+  );
 })();
