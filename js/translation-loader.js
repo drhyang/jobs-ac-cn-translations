@@ -43,9 +43,6 @@ var path=window.JobsAcContext.path;
 
 if(lang==='zh-CN'){
 
-// all Chinese pages
-loadScript('navigation.js');
-
 
 // Static pages SEO
 if(
