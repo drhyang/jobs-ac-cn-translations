@@ -48,15 +48,12 @@ loadScript('navigation.js');
 }
 
 
-// Homepage (English + Chinese)
 if(
 path==='/' ||
 path==='/zh-cn' ||
 path==='/zh-cn/'
 ){
-
 loadScript('home.js');
-
 }
 
 
