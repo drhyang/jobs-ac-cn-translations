@@ -5,8 +5,8 @@
 var originalText=new WeakMap();
 
 function updateNavigation(){
-
 if(!window.JobsAcLanguage||!window.JobsAcLanguage.replaceTextNodes){
+setTimeout(updateNavigation,100);
 return;
 }
 
