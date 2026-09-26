@@ -1,27 +1,19 @@
+/* Jobs.ac.cn Navigation Translation Test */
 (function(){
 'use strict';
 
-var count=0;
+window.JobsAcTranslation.load('navigation.json',function(translations){
 
-var timer=setInterval(function(){
-count++;
+document.querySelectorAll('header a,nav a,footer a').forEach(function(link){
 
-console.log(
-'check',
-count,
-window.JobsAcLanguage
-);
+var text=link.textContent.trim();
 
-if(window.JobsAcLanguage){
-clearInterval(timer);
-console.log('FOUND',window.JobsAcLanguage);
+if(translations[text]){
+link.textContent=translations[text];
 }
 
-if(count>20){
-clearInterval(timer);
-console.log('NOT FOUND');
-}
+});
 
-},500);
+});
 
 })();
