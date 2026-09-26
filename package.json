@@ -1,0 +1,8 @@
+{
+  "name": "jobs-ac-cn-translations",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node js/split-search.js"
+  }
+}
