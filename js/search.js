@@ -1,4 +1,4 @@
-/* Jobs.ac.cn Search Category SEO — meta/title only (h1 handled in <head>) */
+/* Jobs.ac.cn Search Category SEO — meta/title only */
 (function(){
 'use strict';
 
@@ -26,16 +26,15 @@ function saveOriginalMeta(){
   var ot = document.querySelector('meta[property="og:title"]');
   var od = document.querySelector('meta[property="og:description"]');
 
-  originalMeta.description         = d  ? d.getAttribute('content')  || '' : null;
-  originalMeta.twitterTitle        = tt ? tt.getAttribute('content') || '' : null;
-  originalMeta.twitterDescription  = td ? td.getAttribute('content') || '' : null;
-  originalMeta.ogTitle             = ot ? ot.getAttribute('content') || '' : null;
-  originalMeta.ogDescription       = od ? od.getAttribute('content') || '' : null;
+  originalMeta.description        = d  ? d.getAttribute('content')  || '' : null;
+  originalMeta.twitterTitle       = tt ? tt.getAttribute('content') || '' : null;
+  originalMeta.twitterDescription = td ? td.getAttribute('content') || '' : null;
+  originalMeta.ogTitle            = ot ? ot.getAttribute('content') || '' : null;
+  originalMeta.ogDescription      = od ? od.getAttribute('content') || '' : null;
 }
 
 function applyMeta(cat){
   if (!cat) return;
-
   if (cat.title) document.title = cat.title;
 
   var d  = document.querySelector('meta[name="description"]');
@@ -58,30 +57,33 @@ function updateMeta(){
   var slug = getSlug();
   if (!slug) return;
 
-  // Reuse data already fetched by <head> — no second network round-trip
+  // Reuse data already fetched by <head>
   if (window.__jacSearchCategory) {
     saveOriginalMeta();
     applyMeta(window.__jacSearchCategory);
     return;
   }
 
-  if (!window.JobsAcTranslation) return;
-
-  window.JobsAcTranslation.load('search.json', function(categories){
-    if (!categories || !categories[slug]) return;
-    saveOriginalMeta();
-    applyMeta(categories[slug]);
-  });
+  // Fallback: per-slug fetch (~300B, not the whole 58KB)
+  fetch(
+    'https://jobs-ac-cn-translations.pages.dev/zh-cn/search/' + slug + '.json',
+    { credentials: 'omit' }
+  )
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(cat){
+      if (!cat) return;
+      saveOriginalMeta();
+      applyMeta(cat);
+    })
+    .catch(function(e){ console.error('search meta fetch failed:', e); });
 }
 
-// Run immediately if possible
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', updateMeta, { once: true });
 } else {
   updateMeta();
 }
 
-// Turbo navigation
 document.addEventListener('turbo:load', function(){
   window.__jacSearchCategory = null;
   updateMeta();
