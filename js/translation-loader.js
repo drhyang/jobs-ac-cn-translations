@@ -12,7 +12,7 @@ callback(cache[file]);
 return;
 }
 
-fetch('https://jobs-ac-cn-translations.pages.dev/zh-cn/'+file)
+fetch('https://jobs-ac-cn-translations.pages.dev/zh-cn/'+file, { credentials: 'omit' })
 .then(function(r){
 return r.json();
 })
