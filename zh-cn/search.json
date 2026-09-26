@@ -1,0 +1,77 @@
+{
+  "architecture-and-design": {
+    "h1": "建筑与设计类职位",
+    "title": "建筑与设计类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找建筑、城市规划、室内设计及相关设计领域的教学与科研职位。"
+  },
+  "arts": {
+    "h1": "艺术类职位",
+    "title": "艺术类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找美术、表演艺术、视觉艺术及相关创意领域的教学与科研职位。"
+  },
+  "business": {
+    "h1": "商科类职位",
+    "title": "商科类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找会计、金融、管理、市场营销、经济学及其他商科领域的教学与科研职位。"
+  },
+  "communication": {
+    "h1": "传播与传媒类职位",
+    "title": "传播与传媒类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找传播、新闻、媒体、公共关系及相关领域的教学与科研职位。"
+  },
+  "computing": {
+    "h1": "计算机与信息技术类职位",
+    "title": "计算机与信息技术类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找计算机科学、信息技术、软件开发、数据科学及相关领域的教学与科研职位。"
+  },
+  "education": {
+    "h1": "教育类职位",
+    "title": "教育类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找教育、教学、教育领导、课程及相关领域的教学与科研职位。"
+  },
+  "engineering": {
+    "h1": "工程类职位",
+    "title": "工程类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找土木工程、机械工程、电气工程、化学工程及其他工程领域的教学与科研职位。"
+  },
+  "humanities": {
+    "h1": "人文学科类职位",
+    "title": "人文学科类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找历史、哲学、语言、文学、文化研究及其他人文学科领域的教学与科研职位。"
+  },
+  "interdisciplinary-studies": {
+    "h1": "跨学科研究类职位",
+    "title": "跨学科研究类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找涵盖多个学科及新兴跨学科领域的教学与科研职位。"
+  },
+  "law-and-legal-studies": {
+    "h1": "法律与法学类职位",
+    "title": "法律与法学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找法律、法学、政策及相关领域的教学与科研职位。"
+  },
+  "life-sciences": {
+    "h1": "生命科学类职位",
+    "title": "生命科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找生物学、生物技术、遗传学、生态学及其他生命科学领域的教学与科研职位。"
+  },
+  "medicine-and-health": {
+    "h1": "医学与健康类职位",
+    "title": "医学与健康类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找医学、护理、公共卫生、药学、医疗保健及相关领域的教学与科研职位。"
+  },
+  "physical-sciences-and-mathematics": {
+    "h1": "物理科学与数学类职位",
+    "title": "物理科学与数学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找物理学、化学、数学、天文学、地球科学及相关领域的教学与科研职位。"
+  },
+  "social-sciences": {
+    "h1": "社会科学类职位",
+    "title": "社会科学类教学与科研职位 | Jobs.ac.cn",
+    "description": "寻找社会学、心理学、政治学、地理学、人类学及相关领域的教学与科研职位。"
+  },
+  "management-administration-and-support": {
+    "h1": "管理、行政与教辅类职位",
+    "title": "管理、行政与教辅类职位 | Jobs.ac.cn",
+    "description": "寻找高校管理、行政、学生事务、运营、财务、人力资源、传播及其他教辅与专业支持岗位。"
+  }
+}
