@@ -10,6 +10,7 @@ function reveal(){
 }
 
 function applyTranslations(translations){
+  if (!translations) return;
   document.querySelectorAll(SELECTOR).forEach(function(container){
     var walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, null);
     var node;
@@ -21,33 +22,38 @@ function applyTranslations(translations){
       if (t) node.textContent = raw.replace(text, t);
     }
   });
+}
+
+function tryApply(){
+  if (!cached) return false;
+  if (!document.querySelector(SELECTOR)) return false;
+  applyTranslations(cached);
   reveal();
+  return true;
 }
 
-function afterDom(fn){
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fn, { once: true });
-  } else {
-    fn();
-  }
-}
+// JSON 一到就尝试翻译
+window.JobsAcTranslation.load('navigation.json', function(t){
+  cached = t;
+  if (tryApply()) return;
 
-function run(){
-  if (cached) { applyTranslations(cached); return; }
-  window.JobsAcTranslation.load('navigation.json', function(t){
-    cached = t;
-    afterDom(function(){ applyTranslations(t); });
+  // header 还没出现 → 盯着，一出现立刻翻译
+  var mo = new MutationObserver(function(){
+    if (tryApply()) mo.disconnect();
   });
-}
+  mo.observe(document.documentElement, { childList: true, subtree: true });
+});
 
-run();
-
+// Turbo 切页
 document.addEventListener('turbo:before-render', function(){
   document.documentElement.classList.add('jac-i18n-loading');
 });
-document.addEventListener('turbo:render', run);
-document.addEventListener('turbo:load', run);
+document.addEventListener('turbo:load', function(){
+  if (cached) applyTranslations(cached);
+  reveal();
+});
 
-setTimeout(reveal, 2500);
+// 兜底：超时也要显示
+setTimeout(reveal, 1500);
 
 })();
