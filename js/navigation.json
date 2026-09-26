@@ -20,5 +20,4 @@ updateNavigation();
 
 document.addEventListener('turbo:load',updateNavigation);
 document.addEventListener('jobsac:language-change',updateNavigation);
-
 })();
