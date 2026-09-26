@@ -1,0 +1,84 @@
+#jobs-email-apply-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+}
+
+.jobs-email-apply-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.jobs-email-apply-dialog {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.jobs-email-apply-dialog h2 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--token-colors-text-primary, #1e293b);
+}
+
+.jobs-email-apply-dialog p {
+  margin: 0 0 12px;
+  color: var(--token-colors-text-secondary, #64748b);
+}
+
+.jobs-email-apply-address {
+  margin-bottom: 20px;
+  padding: 12px 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--token-colors-text-primary, #1e293b);
+  word-break: break-word;
+  user-select: text;
+}
+
+.jobs-email-apply-copy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--button-color);
+  color: var(--button-text-color);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.jobs-email-apply-copy:hover {
+  background: var(--button-color-hover);
+}
+
+.jobs-email-apply-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  padding: 4px 8px;
+  border: 0;
+  background: transparent;
+  color: #64748b;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.jobs-email-apply-close:hover {
+  color: #1e293b;
+}
