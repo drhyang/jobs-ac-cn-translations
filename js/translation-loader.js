@@ -57,6 +57,17 @@ loadScript('home.js');
 }
 
 
+// Chinese for employers and about pages
+if(
+path==='/for-employers' ||
+path==='/zh-cn/for-employers' ||
+path==='/about' ||
+path==='/zh-cn/about'
+){
+    loadScript('content.js');
+}
+
+  
 // Chinese search pages
 if(
 path.indexOf('/s/')===0 ||
