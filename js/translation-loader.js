@@ -1,45 +1,52 @@
-/* Jobs.ac.cn Homepage SEO */
 (function(){
 'use strict';
 
-window.JobsAcTranslation.load(
-'home.json',
-function(data){
+var cache={};
 
-if(data.title){
-document.title=data.title;
+window.JobsAcTranslation={
+
+load:function(file,callback){
+
+if(cache[file]){
+callback(cache[file]);
+return;
 }
 
-if(data.meta_title){
-
-var ogTitle=document.querySelector(
-'meta[property="og:title"]'
-);
-
-if(ogTitle){
-ogTitle.setAttribute(
-'content',
-data.meta_title
-);
-}
-
-}
-
-if(data.meta_description){
-
-var description=document.querySelector(
-'meta[name="description"]'
-);
-
-if(description){
-description.setAttribute(
-'content',
-data.meta_description
-);
-}
-
-}
-
+fetch('https://jobs-ac-cn-translations.pages.dev/zh-cn/'+file)
+.then(function(r){
+return r.json();
+})
+.then(function(data){
+cache[file]=data;
+callback(data);
 });
+
+}
+
+};
+
+function loadScript(name){
+
+var script=document.createElement('script');
+script.src='https://jobs-ac-cn-translations.pages.dev/js/'+name;
+document.head.appendChild(script);
+
+}
+
+// now JobsAcTranslation exists
+
+if(window.JobsAcContext.lang==='zh-CN'){
+
+loadScript('navigation.js');
+
+if(
+window.JobsAcContext.path==='/' ||
+window.JobsAcContext.path==='/zh-cn' ||
+window.JobsAcContext.path==='/zh-cn/'
+){
+loadScript('home.js');
+}
+
+}
 
 })();
