@@ -5,13 +5,19 @@
 var cache={};
 
 window.JobsAcTranslation={
+
+context:window.JobsAcContext,
+
 load:function(file,callback){
+
 if(cache[file]){
 callback(cache[file]);
 return;
 }
 
-fetch('https://jobs-ac-cn-translations.pages.dev/zh-cn/'+file+'?t='+Date.now())
+fetch(
+'https://jobs-ac-cn-translations.pages.dev/zh-cn/'+file
+)
 .then(function(r){
 if(!r.ok)throw new Error('HTTP '+r.status);
 return r.json();
@@ -23,7 +29,13 @@ callback(data);
 .catch(function(e){
 console.error('Translation load failed:',file,e);
 });
+
+},
+
+finish:function(){
+document.documentElement.classList.remove('translation-loading');
 }
+
 };
 
 })();
