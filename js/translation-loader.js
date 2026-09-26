@@ -3,8 +3,7 @@
 'use strict';
 
 var cache={};
-var scriptUrl=document.currentScript.src;
-var baseUrl=new URL('../zh-cn/',scriptUrl);
+var baseUrl=new URL('../zh-cn/',location.href);
 
 window.JobsAcTranslation={
 load:function(file,callback){
@@ -12,6 +11,7 @@ if(cache[file]){
 callback(cache[file]);
 return;
 }
+
 fetch(new URL(file,baseUrl)+'?t='+Date.now())
 .then(function(r){
 if(!r.ok)throw new Error('HTTP '+r.status);
