@@ -1,0 +1,43 @@
+{
+  "home": {
+    "title": "Jobs.ac.cn - 中国学术人才网",
+    "meta_title": "Jobs.ac.cn - 中国学术人才网",
+    "meta_description": "寻找教学、科研、行政和教辅职位。Jobs.ac.cn连接高校、科研院所及其他学术机构与全球学术及专业人才，为机构招聘和人才职业发展提供专业平台。"
+  },
+
+  "about": {
+    "title": "关于 Jobs.ac.cn - 中国学术人才网",
+    "meta_title": "关于 Jobs.ac.cn - 中国学术人才网",
+    "meta_description": "了解 Jobs.ac.cn，以及我们如何连接高校、科研机构、学术组织与全球学术及专业人才。"
+  },
+
+  "for-employers": {
+    "title": "高校和科研机构招聘服务 | Jobs.ac.cn",
+    "meta_title": "高校和科研机构招聘服务 | Jobs.ac.cn",
+    "meta_description": "Jobs.ac.cn为高校、科研机构和学术组织提供专业招聘服务，帮助机构发布职位并吸引优秀学术及专业人才。"
+  },
+
+  "for-job-seekers": {
+    "title": "寻找学术与专业职位 | Jobs.ac.cn",
+    "meta_title": "寻找学术与专业职位 | Jobs.ac.cn",
+    "meta_description": "在 Jobs.ac.cn 查找高校、科研机构及其他学术组织提供的教学、科研和专业职位机会。"
+  },
+
+  "contact": {
+    "title": "联系我们 | Jobs.ac.cn",
+    "meta_title": "联系我们 | Jobs.ac.cn",
+    "meta_description": "联系 Jobs.ac.cn，了解我们的服务、合作机会以及学术人才招聘平台相关信息。"
+  },
+
+  "blog": {
+    "title": "博客 | Jobs.ac.cn",
+    "meta_title": "博客 | Jobs.ac.cn",
+    "meta_description": "阅读 Jobs.ac.cn 关于学术招聘、高等教育、科研人才和职业发展的最新文章。"
+  },
+
+  "jobs": {
+    "title": "学术与专业职位 | Jobs.ac.cn",
+    "meta_title": "学术与专业职位 | Jobs.ac.cn",
+    "meta_description": "浏览 Jobs.ac.cn 上高校、科研机构及其他组织发布的教学、科研和专业职位。"
+  }
+}
