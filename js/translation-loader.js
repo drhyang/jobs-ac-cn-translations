@@ -1,4 +1,3 @@
-/* Jobs.ac.cn Translation Loader */
 (function(){
 'use strict';
 
@@ -19,23 +18,29 @@ fetch(
 'https://jobs-ac-cn-translations.pages.dev/zh-cn/'+file
 )
 .then(function(r){
-if(!r.ok)throw new Error('HTTP '+r.status);
 return r.json();
 })
 .then(function(data){
 cache[file]=data;
 callback(data);
-})
-.catch(function(e){
-console.error('Translation load failed:',file,e);
 });
 
-},
-
-finish:function(){
-document.documentElement.classList.remove('translation-loading');
 }
 
 };
+
+function loadScript(src){
+
+var script=document.createElement('script');
+script.src='https://jobs-ac-cn-translations.pages.dev/js/'+src;
+document.head.appendChild(script);
+
+}
+
+if(window.JobsAcContext.lang==='zh-cn'){
+
+loadScript('navigation.js');
+
+}
 
 })();
