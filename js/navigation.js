@@ -2,7 +2,15 @@
 (function(){
 'use strict';
 
+function isChinese(){
+return window.location.pathname.indexOf('/zh-cn')===0;
+}
+
 function replaceNavigation(){
+
+if(!isChinese()){
+return;
+}
 
 window.JobsAcTranslation.load(
 'navigation.json',
