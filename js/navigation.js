@@ -5,22 +5,29 @@
 var originalText=new WeakMap();
 
 function updateNavigation(){
+
+console.log('navigation update fired');
+
 if(!window.JobsAcLanguage||!window.JobsAcLanguage.replaceTextNodes){
-setTimeout(updateNavigation,100);
+console.log('language not ready');
 return;
 }
 
 window.JobsAcTranslation.load('navigation.json',function(translations){
 
-var chinese=window.JobsAcLanguage.isChinese();
+console.log('translation loaded');
 
-document.querySelectorAll('header,nav,footer').forEach(function(container){
+var containers=document.querySelectorAll('header,nav,footer');
+
+console.log('containers:',containers.length);
+
+containers.forEach(function(container){
 
 window.JobsAcLanguage.replaceTextNodes(
 container,
 translations,
 originalText,
-chinese
+window.JobsAcLanguage.isChinese()
 );
 
 });
