@@ -11,8 +11,9 @@ callback(cache[file]);
 return;
 }
 
-fetch('https://jobs-ac-cn-translations.pages.dev/zh-cn/'+file)
+fetch('https://jobs-ac-cn-translations.pages.dev/zh-cn/'+file+'?t='+Date.now())
 .then(function(r){
+if(!r.ok)throw new Error('HTTP '+r.status);
 return r.json();
 })
 .then(function(data){
