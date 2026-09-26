@@ -4,10 +4,14 @@
 var originalText=new WeakMap();
 
 function updateNavigation(){
-JobsAcTranslation.load('navigation.json',function(translations){
-var chinese=window.JobsAcLanguage.isChinese();
+window.JobsAcTranslation.load('navigation.json',function(translations){
 document.querySelectorAll('header,nav,footer').forEach(function(container){
-window.JobsAcLanguage.replaceTextNodes(container,translations,originalText,chinese);
+window.JobsAcLanguage.replaceTextNodes(
+container,
+translations,
+originalText,
+window.JobsAcLanguage.isChinese()
+);
 });
 });
 }
