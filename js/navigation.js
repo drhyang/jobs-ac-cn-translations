@@ -1,23 +1,27 @@
-/* Jobs.ac.cn Navigation Translation Test */
+/* Jobs.ac.cn Navigation Translation */
 (function(){
 'use strict';
 
-function translateNavigation(){
+var originalText=new WeakMap();
 
-if(!window.JobsAcTranslation){
-setTimeout(translateNavigation,100);
+function updateNavigation(){
+
+if(!window.JobsAcLanguage||!window.JobsAcLanguage.replaceTextNodes){
 return;
 }
 
 window.JobsAcTranslation.load('navigation.json',function(translations){
 
-document.querySelectorAll('header a,nav a,footer a').forEach(function(link){
+var chinese=window.JobsAcLanguage.isChinese();
 
-var text=link.textContent.trim();
+document.querySelectorAll('header,nav,footer').forEach(function(container){
 
-if(translations[text]){
-link.textContent=translations[text];
-}
+window.JobsAcLanguage.replaceTextNodes(
+container,
+translations,
+originalText,
+chinese
+);
 
 });
 
@@ -25,8 +29,8 @@ link.textContent=translations[text];
 
 }
 
-translateNavigation();
-
-document.addEventListener('turbo:load',translateNavigation);
+document.addEventListener('DOMContentLoaded',updateNavigation);
+document.addEventListener('turbo:load',updateNavigation);
+document.addEventListener('jobsac:language-change',updateNavigation);
 
 })();
