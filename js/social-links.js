@@ -55,7 +55,7 @@ function inject(){
   row.className = 'jac-social-row';
   row.style.cssText =
     'max-width:64rem;margin:0 auto 1rem;padding:0 1rem;' +
-    'display:flex;align-items:center;gap:1rem;';
+    'display:flex;align-items:center;justify-content:center;gap:1rem;';
 
   LINKS.forEach(function(item){
     var a = document.createElement('a');
